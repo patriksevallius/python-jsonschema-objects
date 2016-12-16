@@ -698,9 +698,9 @@ def make_property(prop, info, desc=""):
               if not isinstance(typ, dict):
                 type_checks.append(typ)
                 continue
-              typ = next(t
+              typ = next((t
                          for n, t in validators.SCHEMA_TYPE_MAPPING
-                         if typ['type'] == t)
+                         if typ['type'] == t), None)
               if typ is None:
                   typ = type(None)
               if isinstance(typ, (list, tuple)):
