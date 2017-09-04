@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "test1",
+  "description": "test",
+  "type": "object",
+  "properties": {
+    "test1": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "sub1.json#/sub1" }
+    }
+  }
+}
