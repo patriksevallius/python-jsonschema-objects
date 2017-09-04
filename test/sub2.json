@@ -1,0 +1,15 @@
+{
+  "title": "sub2",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "test",
+  "properties": {
+    "domain": {
+      "enum": [
+        "foo.test1",
+        "foo.test2",
+        "foo.test3"
+      ]
+    }
+  }
+}

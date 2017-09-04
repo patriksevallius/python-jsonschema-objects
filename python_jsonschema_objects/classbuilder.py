@@ -639,7 +639,7 @@ class ClassBuilder(object):
             else:
                 desc = detail[
                     'description'] if 'description' in detail else ""
-                uri = "{0}/{1}".format(nm, prop)
+                uri = "{0}/{1}/{2}".format(nm, 'properties', prop)
                 typ = self.construct(uri, detail)
 
                 props[prop] = make_property(prop, {'type': typ}, desc)
