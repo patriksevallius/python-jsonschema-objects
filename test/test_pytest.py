@@ -494,3 +494,8 @@ def test_boolean_in_child_object():
     ns = builder.build_classes()
 
     ns.Test(data={"my_bool": True})
+
+def test_nested_refs():
+    builder = pjs.ObjectBuilder("test/test1.json")
+    ns = builder.build_classes()
+
